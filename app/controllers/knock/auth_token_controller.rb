@@ -42,7 +42,6 @@ module Knock
 
     def auth_params
       params.require(:auth).permit :email, :password
-      auth_params[:email].downcase!
     end
   end
 end
